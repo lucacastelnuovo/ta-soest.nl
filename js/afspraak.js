@@ -20,12 +20,12 @@ submit.addEventListener("click", function() {
             problem: problem.value,
         },
 
-        success: function(response) {
+        success: function() {
             alert("Het formulier is verstuurd");
         },
 
-        error: function() {
-            alert("Uw bericht is niet verstuurd, probeer het later opnieuw");
+        error: function(reponse) {
+            alert(response.error);
         }
     });
 });
