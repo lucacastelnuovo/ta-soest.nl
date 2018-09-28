@@ -16,11 +16,7 @@ submit.addEventListener("click", function() {
         },
 
         success: function(response) {
-            if (response.status) {
-                alert("Uw bericht is verstuurd");
-            } else {
-                alert("Uw bericht is niet verstuurd, probeer het later opnieuw");
-            }
+            alert("Uw bericht is verstuurd");
         },
 
         error: function() {
