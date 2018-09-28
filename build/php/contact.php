@@ -42,3 +42,5 @@ if ($result['status'] != 'true') {
     header('Content-Type: application/json; charset=UTF-8');
     die(json_encode(array('message' => 'Please try again later!')));
 }
+
+die(json_encode(array('status' => true)));

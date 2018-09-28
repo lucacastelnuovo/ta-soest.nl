@@ -1,5 +1,5 @@
 submit.addEventListener("click", function() {
-    const name = document.querySelector('#name');
+    const name = document.getElementById('name');
     const email = document.querySelector('#email');
     const message = document.querySelector('#message');
     const submit = document.querySelector('#submit');
