@@ -16,6 +16,12 @@
 		"oAP": "/build/afspraak.html",
 		"oF": 0
 		},
+	"/build": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "/build/build",
+		"oF": 0
+		},
 	"/copyright.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -428,6 +434,20 @@
 		"oAP": "/build/over-ons.html",
 		"oF": 0
 		},
+	"/php/afspraak.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/build/php/afspraak.php",
+		"oF": 0
+		},
+	"/php/contact.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/build/php/contact.php",
+		"oF": 0
+		},
 	"/privacy.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -460,7 +480,7 @@
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_green",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 559856435.58728504
+	"lastBuiltDate": 559858979.36530805
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
