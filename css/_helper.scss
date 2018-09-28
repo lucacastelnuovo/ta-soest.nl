@@ -1,7 +1,11 @@
 .bold {
-    font-weight: bold;
+    font-weight: bold !important;
 
     &er {
-        font-weight: bolder;
+        font-weight: bolder !important;
     }
+}
+
+.card.large .card-image {
+    max-height: 90% !important;
 }

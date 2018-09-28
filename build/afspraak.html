@@ -9,7 +9,7 @@
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#F41C1B">
 
-    <title>TechAssistants Soest</title>
+    <title>Afspraak Maken || TechAssistants Soest</title>
 
     <meta content="TechAssistants Soest" name="description">
     <meta content="TechAssistants Soest, TechAssistants, techassistance, bltechassistance" name="keywords">
@@ -48,20 +48,20 @@
           <a href="#" class="brand-logo">TechAssistants Soest</a>
           <a href="#" data-target="mobile" class="right sidenav-trigger"><i class="material-icons">menu</i></a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li class="active"><a href="index.html" class="color-secondary">Home</a></li>
-            <li class=""><a href="afspraak.html" class="color-secondary">Afspraak Maken</a></li>
+            <li class=""><a href="index.html" class="color-secondary">Home</a></li>
+            <li class="active"><a href="afspraak.html" class="color-secondary">Afspraak Maken</a></li>
             <li class=" dropdown-trigger" data-target="menu-desktop"><a href="over-ons.html" class="color-secondary">Over Ons</a></li>
           </ul>
         </div>
     </nav>
 
     <ul id="menu-desktop" class="dropdown-content">
-        <li><a href="publicaties.html"><span class="black-text">Publicaties</span></a></li>
+        <li class=""><a href="publicaties.html"><span class="black-text">Publicaties</span></a></li>
     </ul>
 
     <ul id="mobile" class="sidenav">
-        <li class="active"><a href="index.html">Home</a></li>
-        <li class=""><a href="afspraak.html">Afspraak Maken</a></li>
+        <li class=""><a href="index.html">Home</a></li>
+        <li class="active"><a href="afspraak.html">Afspraak Maken</a></li>
         <li class=""><a href="over-ons.html">Over Ons</a></li>
         <li class=""><a href="publicaties.html">Publicaties</a></li>
     </ul>
@@ -71,55 +71,52 @@
 
 <div class="section">
     <div class="container">
-        <img src="/images/header.jpg" alt="Header || TechAssistants Soest" class="responsive-img">
-    </div>
-</div>
-
-<div class="section">
-    <div class="container">
         <div class="row">
-            <div class="col s12 m7">
-                <h2 class="header"><i class="material-icons small">people</i>Wie zijn wij</h2>
-                <p class="flow-text">Wij zijn de jeugd van tegenwoordig. We zijn een jong bedrijf bestaand uit drie scholieren van Het Baarnsch Lyceum met een passie voor computers. Onze namen zijn Luca Castelnuovo, Brian van Meggelen en Victor Lampe. <br /><a href="over-ons.html">Lees Meer</a></p>
-            </div>
-            <div class="col s12 m5 hide-on-small-only center">
-                <h4 class="color-primary bolder">
-                    Van jong geleerd,
-                    is oud gedaan
-                </h4>
-                <a href="#!"><img src="/images/oplosgarantie.jpg" alt="Oplosgarantie || TechAssistants Soest" class="responsive-img"></a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col s12 m7">
-                <h2 class="header"><i class="material-icons small">computer</i>Wat doen wij</h2>
-                <p class="flow-text">Heeft u moeite met computers, tablets, smartphones, TV, WiFi , internet? Heeft u andere technische vragen? Bel of mail ons gerust. Wij komen bij u langs om uw vragen te beantwoorden en uw probleem op te lossen. <br /><a href="over-ons.html">Lees Meer</a></p>
-            </div>
-            <div class="col s12 m5">
-                <h4>Contact formulier</h4>
+            <div class="col s12">
+                <h2 class="header">Afspraak Maken</h2>
+                <p>Vul AUB dit formulier in dan bellen wij u zo snel mogelijk om een afspraak te maken.</p>
                 <div class="row">
-                    <div class="input-field col s12 m6">
-                        <input id="name" type="text" required>
-                        <label for="name">Naam</label>
+                    <div class="input-field col s12">
+                        <input id="name" type="text" placeholder="Pietje Puk">
+                        <label for="name">Voornaam Achternaam</label>
                     </div>
-                    <div class="input-field col s12 m6">
-                        <input id="email" type="email" required>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="email" type="email" placeholder="name@email.com">
                         <label for="email">Email</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-field col s12">
-                        <textarea id="message" class="materialize-textarea" required></textarea>
-                        <label for="message">Bericht</label>
+                        <input id="phone" type="tel" placeholder="06 12345678">
+                        <label for="phone">Telefoon</label>
                     </div>
                 </div>
-                <div class="row center">
-                    <button id="submit" class="btn waves-effect waves-light color-primary--background" type="submit" name="action">
-                        Verstuur<i class="material-icons right">send</i>
+                <div class="row">
+                    <div class="input-field col s12 l6">
+                        <input id="postalcode" type="text" placeholder="1234 YZ">
+                        <label for="postalcode">Postcode</label>
+                    </div>
+                    <div class="input-field col s12 l6">
+                        <input id="house" type="text" placeholder="1">
+                        <label for="house">Huisnummer</label>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea id="problem" class="materialize-textarea" placeholder="Mijn computer start heel traag op"></textarea>
+                        <label for="problem">Probleemomschrijving</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <button id="submit" class="btn-large waves-effect waves-light color-primary--background" type="submit" name="action">
+                        Verstuur formulier<i class="material-icons right">send</i>
                     </button>
                 </div>
                 <script src="https://cdn.lucacastelnuovo.nl/js/ajax.js"></script>
-                <script src="/js/mail.js"></script>
+                <script src="/js/afspraak.js"></script>
             </div>
         </div>
     </div>

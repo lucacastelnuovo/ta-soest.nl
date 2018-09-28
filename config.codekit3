@@ -7,7 +7,7 @@
 		"uuidString": "1F3C64AB-1AF8-4AE4-8228-EF3B81DA97A3"
 		}
 	],
-"creatorBuild": "28841",
+"creatorBuild": "28901",
 "files": {
 	"/afspraak.kit": {
 		"cB": 0,
@@ -119,15 +119,37 @@
 		"oT": 1,
 		"q": 90
 		},
-	"/images/articles/15-07-2016-Gooi-Eemlander.png": {
-		"ft": 32768,
-		"iS": 303744,
+	"/images/articles/03-05-2017-Soester-Courant.jpg": {
+		"ft": 16384,
+		"iS": 27109,
+		"jF": 0,
 		"oA": 0,
-		"oAP": "/build/images/articles/15-07-2016-Gooi-Eemlander.png",
+		"oAP": "/build/images/articles/03-05-2017-Soester-Courant.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
-		"oT": 1,
+		"q": 90
+		},
+	"/images/articles/03-08-2016-Soester-Courant.jpg": {
+		"ft": 16384,
+		"iS": 5519870,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/images/articles/03-08-2016-Soester-Courant.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 90
+		},
+	"/images/articles/15-07-2016-Gooi-Eemlander.jpg": {
+		"ft": 16384,
+		"iS": 39435,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/images/articles/15-07-2016-Gooi-Eemlander.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
 		"q": 90
 		},
 	"/images/articles/18-08-2016-Amersfoort-Nu.jpg": {
@@ -141,15 +163,15 @@
 		"opt": 1,
 		"q": 90
 		},
-	"/images/articles/24-08-2016-Soester-Courant.png": {
-		"ft": 32768,
-		"iS": 4626831,
+	"/images/articles/24-08-2016-Soester-Courant.jpg": {
+		"ft": 16384,
+		"iS": 358632,
+		"jF": 0,
 		"oA": 0,
-		"oAP": "/build/images/articles/24-08-2016-Soester-Courant.png",
+		"oAP": "/build/images/articles/24-08-2016-Soester-Courant.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
-		"oT": 1,
 		"q": 90
 		},
 	"/images/articles/27-10-2017-Woord-Vaardig.jpg": {
@@ -158,39 +180,6 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/build/images/articles/27-10-2017-Woord-Vaardig.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 90
-		},
-	"/images/articles/overig1.jpg": {
-		"ft": 16384,
-		"iS": 1370597,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/build/images/articles/overig1.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 90
-		},
-	"/images/articles/overig2.jpg": {
-		"ft": 16384,
-		"iS": 27109,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/build/images/articles/overig2.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 90
-		},
-	"/images/articles/overig3.jpg": {
-		"ft": 16384,
-		"iS": 5519870,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/build/images/articles/overig3.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -400,22 +389,32 @@
 		"oAP": "/build/index.html",
 		"oF": 0
 		},
+	"/js/afspraak.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/build/js/afspraak.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/js/contact.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/build/js/contact.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
 	"/js/init.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/build/js/init.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 1
-		},
-	"/js/mail.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/build/js/mail.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
@@ -467,7 +466,7 @@
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_green",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 559850143.44575703
+	"lastBuiltDate": 559855164.54629099
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
