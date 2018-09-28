@@ -16,12 +16,6 @@
 		"oAP": "/build/afspraak.html",
 		"oF": 0
 		},
-	"/build": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "/build/build",
-		"oF": 0
-		},
 	"/copyright.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -466,7 +460,7 @@
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_green",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 559855164.54629099
+	"lastBuiltDate": 559856435.58728504
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
