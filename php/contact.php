@@ -7,7 +7,7 @@ $email_address = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
 if (empty($_POST['name']) || empty($_POST['email']) || empty($_POST['message']) || !$email_address) {
     header('HTTP/1.1 400 Bad Request');
     header('Content-Type: application/json; charset=UTF-8');
-    die(json_encode(array('error' => 'Vul AUB alle velden in')));
+    die(json_encode(array('message' => 'Vul AUB alle velden in')));
 }
 
 $blacklist = json_decode(file_get_contents('https://test.lucacastelnuovo.nl/users/ltcastelnuovo/config/blacklist.js'), true);
@@ -16,7 +16,7 @@ $blacklist = json_decode(file_get_contents('https://test.lucacastelnuovo.nl/user
 if (in_array($_SERVER['REMOTE_ADDR'], $blacklist['blacklist'])) {
     header('HTTP/1.1 400 Bad Request');
     header('Content-Type: application/json; charset=UTF-8');
-    die(json_encode(array('error' => 'Vul AUB alle velden in')));
+    die(json_encode(array('message' => 'Vul AUB alle velden in')));
 }
 
 //Format body
@@ -40,7 +40,7 @@ $result = json_decode($result, true);
 if ($result['status'] != 'true') {
     header('HTTP/1.1 400 Bad Request');
     header('Content-Type: application/json; charset=UTF-8');
-    die(json_encode(array('error' => 'Uw bericht is niet verstuurd, probeer het later opnieuw')));
+    die(json_encode(array('message' => 'Uw bericht is niet verstuurd, probeer het later opnieuw')));
 }
 
 die(json_encode(array('status' => true)));

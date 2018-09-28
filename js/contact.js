@@ -19,7 +19,7 @@ submit.addEventListener("click", function() {
         },
 
         error: function(response) {
-            alert(response.error);
+            alert(response.message);
         }
     });
 });
