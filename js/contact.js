@@ -1,9 +1,8 @@
-const name = document.querySelector('#name');
-const email = document.querySelector('#email');
-const message = document.querySelector('#message');
-const submit = document.querySelector('#submit');
-
 submit.addEventListener("click", function() {
+    const name = document.querySelector('#name');
+    const email = document.querySelector('#email');
+    const message = document.querySelector('#message');
+    const submit = document.querySelector('#submit');
     jQuery.ajax({
         type: "POST",
         url: '/php/contact.php',

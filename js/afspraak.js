@@ -1,12 +1,11 @@
-const name = document.querySelector('#name');
-const email = document.querySelector('#email');
-const phone = document.querySelector('#phone');
-const postalcode = document.querySelector('#postalcode');
-const house = document.querySelector('#house');
-const problem = document.querySelector('#problem');
-const submit = document.querySelector('#submit');
-
 submit.addEventListener("click", function() {
+    const name = document.querySelector('#name');
+    const email = document.querySelector('#email');
+    const phone = document.querySelector('#phone');
+    const postalcode = document.querySelector('#postalcode');
+    const house = document.querySelector('#house');
+    const problem = document.querySelector('#problem');
+    const submit = document.querySelector('#submit');
     jQuery.ajax({
         type: "POST",
         url: '/php/afspraak.php',
