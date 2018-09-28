@@ -24,7 +24,7 @@ submit.addEventListener("click", function() {
             alert("Het formulier is verstuurd");
         },
 
-        error: function(reponse) {
+        error: function(response) {
             alert(response.error);
         }
     });

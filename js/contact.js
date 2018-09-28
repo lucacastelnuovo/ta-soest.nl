@@ -18,7 +18,7 @@ submit.addEventListener("click", function() {
             alert("Uw bericht is verstuurd");
         },
 
-        error: function(reponse) {
+        error: function(response) {
             alert(response.error);
         }
     });
