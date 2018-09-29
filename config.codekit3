@@ -187,7 +187,7 @@
 		},
 	"/images/header.jpg": {
 		"ft": 16384,
-		"iS": 9126713,
+		"iS": 2044707,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/build/images/header.jpg",
@@ -198,7 +198,7 @@
 		},
 	"/images/header2.jpg": {
 		"ft": 16384,
-		"iS": 1991670,
+		"iS": 3427019,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/build/images/header2.jpg",
@@ -480,7 +480,7 @@
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_green",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 559897015.23330295
+	"lastBuiltDate": 559898486.91741502
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
