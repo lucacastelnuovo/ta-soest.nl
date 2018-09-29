@@ -22,6 +22,7 @@ submit.addEventListener("click", function() {
 
         success: function() {
             alert("Het formulier is verstuurd");
+            window.location.href = "/index.html";
         },
 
         error: function(response) {

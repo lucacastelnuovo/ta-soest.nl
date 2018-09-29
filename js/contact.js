@@ -16,6 +16,7 @@ submit.addEventListener("click", function() {
 
         success: function() {
             alert("Uw bericht is verstuurd");
+            window.location.href = "/index.html";
         },
 
         error: function(response) {
