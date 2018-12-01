@@ -7,7 +7,7 @@
 		"uuidString": "1F3C64AB-1AF8-4AE4-8228-EF3B81DA97A3"
 		}
 	],
-"creatorBuild": "28901",
+"creatorBuild": "28905",
 "files": {
 	"/afspraak.kit": {
 		"cB": 0,
@@ -389,22 +389,12 @@
 		"oAP": "/build/index.html",
 		"oF": 0
 		},
-	"/js/afspraak.js": {
+	"/js/form-handler.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/build/js/afspraak.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 1
-		},
-	"/js/contact.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/build/js/contact.js",
+		"oAP": "/build/js/form-handler.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
@@ -432,20 +422,6 @@
 		"ft": 2048,
 		"oA": 0,
 		"oAP": "/build/over-ons.html",
-		"oF": 0
-		},
-	"/php/afspraak.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/build/php/afspraak.php",
-		"oF": 0
-		},
-	"/php/contact.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/build/php/contact.php",
 		"oF": 0
 		},
 	"/privacy.kit": {
@@ -480,7 +456,7 @@
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_green",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 560022896.66714096
+	"lastBuiltDate": 565353011.71130598
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
