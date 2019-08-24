@@ -17,6 +17,12 @@
 		"oAP": "/build/afspraak.html",
 		"oF": 0
 		},
+	"/build": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "/build/build",
+		"oF": 0
+		},
 	"/copyright.kit": {
 		"cB": 0,
 		"ft": 2048,
