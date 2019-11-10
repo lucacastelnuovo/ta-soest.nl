@@ -30,6 +30,18 @@
 <!--Import Materialize JavaScript-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 <!--Init Materialize Components-->
-<script src="/js/init.js"></script>
+<script>
+    //Mobile Side nav
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems, {edge:"right",draggable:!0});
+    });
+
+    //Tooltips
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.tooltipped');
+        var instances = M.Tooltip.init(elems, {});
+    });
+</script>
 
 </html>
