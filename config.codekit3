@@ -489,6 +489,12 @@
 		"oAP": "/build/netlify.toml",
 		"oF": 0
 		},
+	"/node_modules": {
+		"ft": 65536,
+		"oA": 2,
+		"oAP": "/build/node_modules",
+		"oF": 0
+		},
 	"/over-ons.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -496,6 +502,22 @@
 		"oA": 0,
 		"oAP": "/build/over-ons.html",
 		"oF": 0
+		},
+	"/package-lock.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/build/package-lock.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 0
+		},
+	"/package.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/build/package.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 0
 		},
 	"/pdf/03-05-2017-Soester-Courant.pdf": {
 		"cB": 0,
@@ -580,7 +602,7 @@
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_green",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 595098800.370579
+	"lastBuiltDate": 595101013.40304196
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
