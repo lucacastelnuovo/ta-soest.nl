@@ -10,14 +10,12 @@ exports.handler = (event, context, callback) => {
       body: 'process.env.CONTACT_EMAIL must be defined'
     })
   }
-
   if (!process.env.SENDGRID_KEY) {
     return callback(null, {
       statusCode: 500,
       body: 'process.env.SENDGRID_KEY must be defined'
     })
   }
-
   if (!process.env.RECAPTCHA_KEY) {
     return callback(null, {
       statusCode: 500,
@@ -37,7 +35,6 @@ exports.handler = (event, context, callback) => {
       body: e.message
     })
   }
-
   try {
     validateLength('body.name', body.name, 3, 50)
   } catch (e) {
@@ -46,7 +43,6 @@ exports.handler = (event, context, callback) => {
       body: e.message
     })
   }
-
   try {
     validateEmail('body.email', body.email)
   } catch (e) {
@@ -55,7 +51,6 @@ exports.handler = (event, context, callback) => {
       body: e.message
     })
   }
-
   try {
     validateLength('body.message', body.message, 3, 1000)
   } catch (e) {
@@ -65,15 +60,12 @@ exports.handler = (event, context, callback) => {
     })
   }
 
-  let additional = "";
-  const keys = Object.keys(data);
-  if (keys.length > 3) {
-    keys.fiter(key => {
-      return key !== "name" &&  key !== "email" && key !== "details"
-    }).forEach(key => {
-      additional.push(key);
-    });
-  }
+  var additional = [];
+  for (var key in body) {
+    if (body.hasOwnProperty(key) && key !== "name" && key !== "email" && key !== "message" && key !== "g-recaptcha-response") {
+      additional.push(key + ' = ' + body[key]);
+    }
+  };
 
   const msg = {
     to: process.env.CONTACT_EMAIL,
@@ -83,7 +75,7 @@ exports.handler = (event, context, callback) => {
       name: body.name,
       email: body.email,
       details: body.message,
-      additional: additional
+      additional: additional.join('\n')
     },
   };
 

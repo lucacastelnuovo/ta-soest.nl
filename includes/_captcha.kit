@@ -64,12 +64,12 @@
       .then(() => {
         form.style.display = "none";
         if (
-          !document.querySelector("#captcha_invalid").style.display === "block"
+          document.querySelector("#captcha_invalid").style.display !== "block"
         ) {
           document.querySelector("#thankyou_message").style.display = "block";
         }
       })
-      .catch(error => {
+      .catch(() => {
         document.querySelector("#captcha_invalid").style.display = "block";
         buttonsState(true, form);
       });

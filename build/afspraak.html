@@ -79,118 +79,86 @@
 
 
 <div class="section">
-    <div class="container">
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <h2 class="header">Afspraak Maken</h2>
+        <p>
+          Vul AUB dit formulier in dan bellen wij u zo snel mogelijk om een
+          afspraak te maken.
+        </p>
         <div class="row">
-            <div class="col s12">
-                <h2 class="header">Afspraak Maken</h2>
-                <p>
-                    Vul AUB dit formulier in dan bellen wij u zo snel mogelijk
-                    om een afspraak te maken.
-                </p>
-                <div class="row">
-                    <div
-                        id="thankyou_message"
-                        style="display:none;"
-                        class="col s12"
-                    >
-                        <h6 class="btn-small disabled">
-                            Uw bericht is verstuurd!
-                        </h6>
-                    </div>
-                    <div
-                        id="email_invalid"
-                        style="display:none;"
-                        class="col s12"
-                    >
-                        <h6 class="btn-small disabled">
-                            Ongeldig email adres!
-                        </h6>
-                    </div>
-                    <div
-                        id="captcha_invalid"
-                        style="display:none;"
-                        class="col s12"
-                    >
-                        <h6 class="btn-small disabled">
-                            Probeer AUB opnieuw!
-                        </h6>
-                    </div>
-                </div>
-                <form action="/.netlify/functions/send-email">
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input id="name" type="text" name="name" required />
-                            <label for="name">Voornaam Achternaam</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input
-                                id="email"
-                                type="email"
-                                name="email"
-                                required
-                            />
-                            <label for="email">Email</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input
-                                id="phone"
-                                type="tel"
-                                name="phone"
-                                required
-                            />
-                            <label for="phone">Telefoon</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12 l6">
-                            <input
-                                id="postalcode"
-                                type="text"
-                                name="postalcode"
-                                required
-                            />
-                            <label for="postalcode">Postcode</label>
-                        </div>
-                        <div class="input-field col s12 l6">
-                            <input
-                                id="house"
-                                type="text"
-                                name="house"
-                                required
-                            />
-                            <label for="house">Huisnummer</label>
-                        </div>
-                    </div>
-                    <br />
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <textarea
-                                id="problem"
-                                class="materialize-textarea"
-                                placeholder="Mijn computer start heel traag op"
-                                name="description"
-                                required
-                            ></textarea>
-                            <label for="problem">Probleemomschrijving</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <button
-                            class="g-recaptcha btn waves-effect waves-light color-primary--background"
-                            data-sitekey="6LeB8MEUAAAAAFXzSJuIvopJP0D22uAC_GibgdGQ"
-                            data-callback="handleFormSubmit"
-                        >
-                            Verstuur<i class="material-icons right">send</i>
-                        </button>
-                    </div>
-                </form>
-            </div>
+          <div id="thankyou_message" style="display:none;" class="col s12">
+            <h6 class="btn-small disabled">
+              Uw bericht is verstuurd!
+            </h6>
+          </div>
+          <div id="email_invalid" style="display:none;" class="col s12">
+            <h6 class="btn-small disabled">
+              Ongeldig email adres!
+            </h6>
+          </div>
+          <div id="captcha_invalid" style="display:none;" class="col s12">
+            <h6 class="btn-small disabled">
+              Probeer AUB opnieuw!
+            </h6>
+          </div>
         </div>
+        <form action="/.netlify/functions/send-email">
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="name" type="text" name="name" required />
+              <label for="name">Voornaam Achternaam</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="email" type="email" name="email" required />
+              <label for="email">Email</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="phone" type="tel" name="phone" required />
+              <label for="phone">Telefoon</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12 l6">
+              <input id="postalcode" type="text" name="postalcode" required />
+              <label for="postalcode">Postcode</label>
+            </div>
+            <div class="input-field col s12 l6">
+              <input id="house" type="text" name="house" required />
+              <label for="house">Huisnummer</label>
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea
+                id="message"
+                class="materialize-textarea"
+                placeholder="Mijn computer start heel traag op"
+                name="message"
+                required
+              ></textarea>
+              <label for="message">Probleemomschrijving</label>
+            </div>
+          </div>
+          <div class="row">
+            <button
+              class="g-recaptcha btn waves-effect waves-light color-primary--background"
+              data-sitekey="6LeB8MEUAAAAAFXzSJuIvopJP0D22uAC_GibgdGQ"
+              data-callback="handleFormSubmit"
+            >
+              Verstuur<i class="material-icons right">send</i>
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
+  </div>
 </div>
 
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
@@ -259,12 +227,12 @@
       .then(() => {
         form.style.display = "none";
         if (
-          !document.querySelector("#captcha_invalid").style.display === "block"
+          document.querySelector("#captcha_invalid").style.display !== "block"
         ) {
           document.querySelector("#thankyou_message").style.display = "block";
         }
       })
-      .catch(error => {
+      .catch(() => {
         document.querySelector("#captcha_invalid").style.display = "block";
         buttonsState(true, form);
       });
