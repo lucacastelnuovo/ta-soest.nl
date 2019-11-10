@@ -34,7 +34,7 @@
 		"oF": 1
 		},
 	"/afspraak.kit": {
-		"cB": 1,
+		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 0,
@@ -48,7 +48,7 @@
 		"oF": 0
 		},
 	"/copyright.kit": {
-		"cB": 1,
+		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 0,
@@ -434,7 +434,7 @@
 		"q": 90
 		},
 	"/includes/_captcha.kit": {
-		"cB": 1,
+		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 1,
@@ -442,7 +442,7 @@
 		"oF": 0
 		},
 	"/includes/_footer.kit": {
-		"cB": 1,
+		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 1,
@@ -450,7 +450,7 @@
 		"oF": 0
 		},
 	"/includes/_header.kit": {
-		"cB": 1,
+		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 1,
@@ -458,7 +458,7 @@
 		"oF": 0
 		},
 	"/includes/_navbar.kit": {
-		"cB": 1,
+		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 1,
@@ -466,7 +466,7 @@
 		"oF": 0
 		},
 	"/index.kit": {
-		"cB": 1,
+		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 0,
@@ -490,7 +490,7 @@
 		"oF": 0
 		},
 	"/over-ons.kit": {
-		"cB": 1,
+		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 0,
@@ -546,7 +546,7 @@
 		"oF": 0
 		},
 	"/privacy.kit": {
-		"cB": 1,
+		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 0,
@@ -554,7 +554,7 @@
 		"oF": 0
 		},
 	"/publicaties.kit": {
-		"cB": 1,
+		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 0,
@@ -562,7 +562,7 @@
 		"oF": 0
 		},
 	"/voorwaarden.kit": {
-		"cB": 1,
+		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 0,
@@ -580,7 +580,7 @@
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_green",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 595096775.03454995
+	"lastBuiltDate": 595097196.65966105
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -2499,7 +2499,7 @@
 		"autoOutputPathReplace1": "kit",
 		"autoOutputPathReplace2": "html",
 		"autoOutputPathStyle": 0,
-		"shouldRunCacheBuster": 1,
+		"shouldRunCacheBuster": 0,
 		"shouldRunHTMLMinifier": 0
 		},
 	"languageDefaultsLESS": {
