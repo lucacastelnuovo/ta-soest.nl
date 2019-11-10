@@ -57,12 +57,22 @@ exports.handler = (event, context, callback) => {
   }
 
   try {
-    validateLength('body.details', body.details, 3, 1000)
+    validateLength('body.message', body.message, 3, 1000)
   } catch (e) {
     return callback(null, {
       statusCode: 403,
       body: e.message
     })
+  }
+
+  let additional = "";
+  const keys = Object.keys(data);
+  if (keys.length > 3) {
+    keys.fiter(key => {
+      return key !== "name" &&  key !== "email" && key !== "details"
+    }).forEach(key => {
+      additional.push(key);
+    });
   }
 
   const msg = {
@@ -72,7 +82,8 @@ exports.handler = (event, context, callback) => {
     dynamic_template_data: {
       name: body.name,
       email: body.email,
-      details: body.details,
+      details: body.message,
+      additional: additional
     },
   };
 
