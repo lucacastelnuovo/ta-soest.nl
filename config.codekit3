@@ -9,6 +9,22 @@
 	],
 "creatorBuild": "31934",
 "files": {
+	"/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/.gitignore",
+		"oF": 0
+		},
+	"/.netlify/state.json": {
+		"ft": 524288,
+		"oA": 0,
+		"oAP": "/build/.netlify/state.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 0
+		},
 	"/_headers": {
 		"cB": 0,
 		"ft": 8192,
@@ -18,9 +34,9 @@
 		"oF": 1
 		},
 	"/afspraak.kit": {
-		"cB": 0,
+		"cB": 1,
 		"ft": 2048,
-		"hM": 1,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/build/afspraak.html",
 		"oF": 0
@@ -32,9 +48,9 @@
 		"oF": 0
 		},
 	"/copyright.kit": {
-		"cB": 0,
+		"cB": 1,
 		"ft": 2048,
-		"hM": 1,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/build/copyright.html",
 		"oF": 0
@@ -130,6 +146,50 @@
 		"opt": 1,
 		"oT": 1,
 		"q": 90
+		},
+	"/functions/send-email/node_modules": {
+		"ft": 65536,
+		"oA": 2,
+		"oAP": "/build/functions/send-email/node_modules",
+		"oF": 0
+		},
+	"/functions/send-email/package-lock.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/build/functions/send-email/package-lock.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 0
+		},
+	"/functions/send-email/package.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "/build/functions/send-email/package.json",
+		"oF": 1,
+		"oO": 0,
+		"oS": 0
+		},
+	"/functions/send-email/send-email.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "/build/functions/send-email/send-email.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 1
+		},
+	"/functions/send-email/validations.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "/build/functions/send-email/validations.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 1
 		},
 	"/images/articles/03-05-2017-Soester-Courant.jpg": {
 		"ft": 16384,
@@ -374,41 +434,41 @@
 		"q": 90
 		},
 	"/includes/_captcha.kit": {
-		"cB": 0,
+		"cB": 1,
 		"ft": 2048,
-		"hM": 1,
+		"hM": 0,
 		"oA": 1,
 		"oAP": "/build/includes/_captcha.html",
 		"oF": 0
 		},
 	"/includes/_footer.kit": {
-		"cB": 0,
+		"cB": 1,
 		"ft": 2048,
-		"hM": 1,
+		"hM": 0,
 		"oA": 1,
 		"oAP": "/build/includes/_footer.html",
 		"oF": 0
 		},
 	"/includes/_header.kit": {
-		"cB": 0,
+		"cB": 1,
 		"ft": 2048,
-		"hM": 1,
+		"hM": 0,
 		"oA": 1,
 		"oAP": "/build/includes/_header.html",
 		"oF": 0
 		},
 	"/includes/_navbar.kit": {
-		"cB": 0,
+		"cB": 1,
 		"ft": 2048,
-		"hM": 1,
+		"hM": 0,
 		"oA": 1,
 		"oAP": "/build/includes/_navbar.html",
 		"oF": 0
 		},
 	"/index.kit": {
-		"cB": 0,
+		"cB": 1,
 		"ft": 2048,
-		"hM": 1,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/build/index.html",
 		"oF": 0
@@ -421,10 +481,18 @@
 		"oO": 0,
 		"oS": 0
 		},
-	"/over-ons.kit": {
+	"/netlify.toml": {
 		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/netlify.toml",
+		"oF": 0
+		},
+	"/over-ons.kit": {
+		"cB": 1,
 		"ft": 2048,
-		"hM": 1,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/build/over-ons.html",
 		"oF": 0
@@ -478,25 +546,25 @@
 		"oF": 0
 		},
 	"/privacy.kit": {
-		"cB": 0,
+		"cB": 1,
 		"ft": 2048,
-		"hM": 1,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/build/privacy.html",
 		"oF": 0
 		},
 	"/publicaties.kit": {
-		"cB": 0,
+		"cB": 1,
 		"ft": 2048,
-		"hM": 1,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/build/publicaties.html",
 		"oF": 0
 		},
 	"/voorwaarden.kit": {
-		"cB": 0,
+		"cB": 1,
 		"ft": 2048,
-		"hM": 1,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/build/voorwaarden.html",
 		"oF": 0
@@ -512,7 +580,7 @@
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_green",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 595091316.26502299
+	"lastBuiltDate": 595096775.03454995
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -2431,8 +2499,8 @@
 		"autoOutputPathReplace1": "kit",
 		"autoOutputPathReplace2": "html",
 		"autoOutputPathStyle": 0,
-		"shouldRunCacheBuster": 0,
-		"shouldRunHTMLMinifier": 1
+		"shouldRunCacheBuster": 1,
+		"shouldRunHTMLMinifier": 0
 		},
 	"languageDefaultsLESS": {
 		"allowInsecureImports": 0,
