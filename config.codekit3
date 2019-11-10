@@ -25,14 +25,6 @@
 		"oO": 0,
 		"oS": 0
 		},
-	"/.prettierrc": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/build/.prettierrc",
-		"oF": 0
-		},
 	"/_headers": {
 		"cB": 0,
 		"ft": 8192,
@@ -588,7 +580,7 @@
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_green",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 595097196.65966105
+	"lastBuiltDate": 595098800.370579
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
