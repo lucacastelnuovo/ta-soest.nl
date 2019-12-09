@@ -141,7 +141,7 @@
             </h6>
           </div>
         </div>
-        <form action="https://netlify.lucacastelnuovo.nl/api/send-email">
+        <form >
           <div class="row">
             <div class="input-field col s12 l6">
               <input id="name" type="text" name="name" required />
@@ -166,7 +166,7 @@
           <div class="row center">
             <button
               class="g-recaptcha btn waves-effect waves-light color-primary--background"
-              data-sitekey="6LeB8MEUAAAAAFXzSJuIvopJP0D22uAC_GibgdGQ"
+              data-sitekey="6LfJ2MYUAAAAAFm5zTqhH1I-BTcz7hGS3qSLPXPH"
               data-callback="handleFormSubmit"
             >
               Verstuur<i class="material-icons right">send</i>
@@ -179,6 +179,10 @@
 </div>
 
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script>
+  window.CONTACT_EMAIL = "ltcastelnuovo@gmail.com";
+  window.TEMPLATE_ID = "d-86909c9d9dba4678a154c4dcde3667cf";
+</script>
 <script src="https://netlify.lucacastelnuovo.nl/send-email.js"></script>
 
 </main>
