@@ -17,14 +17,6 @@
 		"oAP": "/build/.gitignore",
 		"oF": 0
 		},
-	"/.netlify/state.json": {
-		"ft": 524288,
-		"oA": 0,
-		"oAP": "/build/.netlify/state.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 0
-		},
 	"/_headers": {
 		"cB": 0,
 		"ft": 8192,
@@ -39,12 +31,6 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/build/afspraak.html",
-		"oF": 0
-		},
-	"/build": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "/build/build",
 		"oF": 0
 		},
 	"/copyright.kit": {
@@ -146,50 +132,6 @@
 		"opt": 1,
 		"oT": 1,
 		"q": 90
-		},
-	"/functions/send-email/node_modules": {
-		"ft": 65536,
-		"oA": 2,
-		"oAP": "/build/functions/send-email/node_modules",
-		"oF": 0
-		},
-	"/functions/send-email/package-lock.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/build/functions/send-email/package-lock.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 0
-		},
-	"/functions/send-email/package.json": {
-		"ft": 524288,
-		"oA": 2,
-		"oAP": "/build/functions/send-email/package.json",
-		"oF": 1,
-		"oO": 0,
-		"oS": 0
-		},
-	"/functions/send-email/send-email.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 2,
-		"oAP": "/build/functions/send-email/send-email.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 1
-		},
-	"/functions/send-email/validations.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 2,
-		"oAP": "/build/functions/send-email/validations.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 1
 		},
 	"/images/articles/03-05-2017-Soester-Courant.jpg": {
 		"ft": 16384,
@@ -481,20 +423,6 @@
 		"oO": 0,
 		"oS": 0
 		},
-	"/netlify.toml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/build/netlify.toml",
-		"oF": 0
-		},
-	"/node_modules": {
-		"ft": 65536,
-		"oA": 2,
-		"oAP": "/build/node_modules",
-		"oF": 0
-		},
 	"/over-ons.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -502,22 +430,6 @@
 		"oA": 0,
 		"oAP": "/build/over-ons.html",
 		"oF": 0
-		},
-	"/package-lock.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/build/package-lock.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 0
-		},
-	"/package.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/build/package.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 0
 		},
 	"/pdf/03-05-2017-Soester-Courant.pdf": {
 		"cB": 0,
@@ -602,7 +514,7 @@
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_green",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 595101013.40304196
+	"lastBuiltDate": 597603193.082762
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
