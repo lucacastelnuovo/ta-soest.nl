@@ -79,94 +79,177 @@
 
 
 <div class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col s12">
-        <h2 class="header">Afspraak Maken</h2>
-        <p>
-          Vul AUB dit formulier in dan bellen wij u zo snel mogelijk om een
-          afspraak te maken.
-        </p>
+    <div class="container">
         <div class="row">
-          <div id="thankyou_message" style="display:none;" class="col s12">
-            <h6 class="btn-small disabled">
-              Uw bericht is verstuurd!
-            </h6>
-          </div>
-          <div id="email_invalid" style="display:none;" class="col s12">
-            <h6 class="btn-small disabled">
-              Ongeldig email adres!
-            </h6>
-          </div>
-          <div id="captcha_invalid" style="display:none;" class="col s12">
-            <h6 class="btn-small disabled">
-              Probeer AUB opnieuw!
-            </h6>
-          </div>
+            <div class="col s12">
+                <h2 class="header">Afspraak Maken</h2>
+                <p>
+                    Vul AUB dit formulier in dan bellen wij u zo snel mogelijk
+                    om een afspraak te maken.
+                </p>
+                <div class="row">
+                    <div
+                        id="thankyou_message"
+                        style="display:none;"
+                        class="col s12"
+                    >
+                        <h6 class="btn-small disabled">
+                            Uw bericht is verstuurd!
+                        </h6>
+                    </div>
+                    <div
+                        id="email_invalid"
+                        style="display:none;"
+                        class="col s12"
+                    >
+                        <h6 class="btn-small disabled">
+                            Ongeldig email adres!
+                        </h6>
+                    </div>
+                    <div
+                        id="submission_invalid"
+                        style="display:none;"
+                        class="col s12"
+                    >
+                        <h6 class="btn-small disabled">
+                            Probeer AUB opnieuw!
+                        </h6>
+                    </div>
+                </div>
+                <form
+                    name="afspraak"
+                    method="POST"
+                    action="/afspraak"
+                    data-netlify-recaptcha="true"
+                    data-netlify="true"
+                >
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="name" type="text" name="name" required />
+                            <label for="name">Voornaam Achternaam</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input
+                                id="email"
+                                type="email"
+                                name="email"
+                                required
+                            />
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input
+                                id="phone"
+                                type="tel"
+                                name="phone"
+                                required
+                            />
+                            <label for="phone">Telefoon</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12 l6">
+                            <input
+                                id="postalcode"
+                                type="text"
+                                name="postalcode"
+                                required
+                            />
+                            <label for="postalcode">Postcode</label>
+                        </div>
+                        <div class="input-field col s12 l6">
+                            <input
+                                id="house"
+                                type="text"
+                                name="house"
+                                required
+                            />
+                            <label for="house">Huisnummer</label>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea
+                                id="message"
+                                class="materialize-textarea"
+                                placeholder="Mijn computer start heel traag op"
+                                name="message"
+                                required
+                            ></textarea>
+                            <label for="message">Probleemomschrijving</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div data-netlify-recaptcha="true"></div>
+                    </div>
+                    <div class="row">
+                        <button
+                            class="btn waves-effect waves-light color-primary--background"
+                        >
+                            Verstuur<i class="material-icons right">send</i>
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
-        <form>
-          <div class="row">
-            <div class="input-field col s12">
-              <input id="name" type="text" name="name" required />
-              <label for="name">Voornaam Achternaam</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <input id="email" type="email" name="email" required />
-              <label for="email">Email</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <input id="phone" type="tel" name="phone" required />
-              <label for="phone">Telefoon</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12 l6">
-              <input id="postalcode" type="text" name="postalcode" required />
-              <label for="postalcode">Postcode</label>
-            </div>
-            <div class="input-field col s12 l6">
-              <input id="house" type="text" name="house" required />
-              <label for="house">Huisnummer</label>
-            </div>
-          </div>
-          <br />
-          <div class="row">
-            <div class="input-field col s12">
-              <textarea
-                id="message"
-                class="materialize-textarea"
-                placeholder="Mijn computer start heel traag op"
-                name="message"
-                required
-              ></textarea>
-              <label for="message">Probleemomschrijving</label>
-            </div>
-          </div>
-          <div class="row">
-            <button
-              class="g-recaptcha btn waves-effect waves-light color-primary--background"
-              data-sitekey="6LfJ2MYUAAAAAFm5zTqhH1I-BTcz7hGS3qSLPXPH"
-              data-callback="handleFormSubmit"
-            >
-              Verstuur<i class="material-icons right">send</i>
-            </button>
-          </div>
-        </form>
-      </div>
     </div>
-  </div>
 </div>
 
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <script>
-  window.CONTACT_EMAIL = "ltcastelnuovo@gmail.com";
-  window.TEMPLATE_ID = "d-86909c9d9dba4678a154c4dcde3667cf";
+    function validEmail(email) {
+        const re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+        return re.test(email);
+    }
+
+    function buttonsState(active, form) {
+        const buttons = form.querySelectorAll("button");
+        for (let i = 0; i < buttons.length; i++) {
+            buttons[i].disabled = !active;
+        }
+    }
+
+    let form = document.querySelector("form");
+    form.addEventListener("submit", e => {
+        e.preventDefault();
+        const formData = new FormData(form);
+        console.log("formData", formData);
+
+        if (!validEmail(formData.get("email"))) {
+            document.querySelector("#email_invalid").style.display = "block";
+            return false;
+        }
+
+        document.querySelector("#email_invalid").style.display = "none";
+        buttonsState(false, form);
+
+        fetch(form.getAttribute("action"), {
+            method: "POST",
+            headers: {
+                Accept: "application/x-www-form-urlencoded;charset=UTF-8",
+                "Content-Type":
+                    "application/x-www-form-urlencoded;charset=UTF-8"
+            },
+            body: new URLSearchParams(formData).toString()
+        })
+            .then(res => {
+                if (res) {
+                    form.style.display = "none";
+                    document.querySelector("#thankyou_message").style.display =
+                        "block";
+                }
+            })
+            .catch(() => {
+                document.querySelector("#submission_invalid").style.display =
+                    "block";
+                buttonsState(true, form);
+            });
+    });
 </script>
-<script src="https://netlify.lucacastelnuovo.nl/send-email.js"></script>
 
 </main>
 <footer class="page-footer color-primary--background hover-disable">
