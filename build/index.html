@@ -245,11 +245,13 @@
             body: new URLSearchParams(formData).toString()
         })
             .then(res => {
-                if (res) {
-                    form.style.display = "none";
-                    document.querySelector("#thankyou_message").style.display =
-                        "block";
+                if (response.status !== 200) {
+                    throw new Error("Not 200 response");
                 }
+
+                form.style.display = "none";
+                document.querySelector("#thankyou_message").style.display =
+                    "block";
             })
             .catch(() => {
                 document.querySelector("#submission_invalid").style.display =
