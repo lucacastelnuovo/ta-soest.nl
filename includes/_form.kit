@@ -25,7 +25,7 @@
         document.querySelector("#email_invalid").style.display = "none";
         buttonsState(false, form);
 
-        fetch(form.getAttribute("action"), {
+        fetch("/", {
             method: "POST",
             headers: {
                 Accept: "application/x-www-form-urlencoded;charset=UTF-8",
@@ -35,7 +35,7 @@
             body: new URLSearchParams(formData).toString()
         })
             .then(res => {
-                if (response.status !== 200) {
+                if (res.status !== 200) {
                     throw new Error("Not 200 response");
                 }
 
