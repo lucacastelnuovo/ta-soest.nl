@@ -1,0 +1,30 @@
+{
+    "name": "TechAssistants Soest",
+    "shortName": "TAS",
+    "slogan": "Van jong geleerd, is oud gedaan",
+    "url": "https://ta-soest.nl",
+    "author": {
+        "name": "Luca Castelnuovo",
+        "url": "https://lucacastelnuovo.nl"
+    },
+    "contact": {
+        "address": "Hertenlaantje 1, 3766AA Soest",
+        "email": "info@ta-soest.nl",
+        "phone": "06 24 51 83 37"
+    },
+    "images": {
+        "favicon": "/images/favicon.png",
+        "logo": "/images/logo.jpg",
+        "header": "/images/header.jpg",
+        "garantie": "/images/oplosgarantie.jpg"
+    },
+    "meta": {
+        "description": "Wij zijn een bedrijf opgericht door 3 studenten van Het Baarnsch Lyceum. Ons doel is om mensen te helpen die problemen met computers hebben.",
+        "keywords": "TechAssistants Soest, TechAssistants, techassistance, bltechassistance"
+    },
+    "resources": {
+        "materializeCSS": "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css",
+        "materializeJS": "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js",
+        "materialIcons": "https://fonts.googleapis.com/icon?family=Material+Icons"
+    }
+}

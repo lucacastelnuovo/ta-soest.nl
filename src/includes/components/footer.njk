@@ -1,0 +1,36 @@
+<footer class="page-footer color-primary--background hover-disable">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h4 class="white-text">{{ site.name }}</h4>
+                <h5 class="grey-text text-lighten-4">{{ site.slogan }}</h5>
+                <h6 class="grey-text text-lighten-4">Tel: <a href="tel:{{ site.contact.phone }}">{{ site.contact.phone }}</a>
+                </h6>
+                <h6 class="grey-text text-lighten-4">Mail: <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a>
+                </h6>
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                    <li>
+                        <a class="grey-text text-lighten-3" href="{{ navigation.algemeneVoorwaarden.url }}">Algemene Voorwaarden</a>
+                    </li>
+                    <li>
+                        <a class="grey-text text-lighten-3" href="{{ navigation.privacybeleid.url }}">Privacybeleid</a>
+                    </li>
+                    <li>
+                        <a class="grey-text text-lighten-3" href="{{ navigation.copyright.url }}">Copyright</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            <a href="{{ navigation.copyright.url }}" class="grey-text text-lighten-4">© 2020 {{ site.name }}</a>
+            <span class="right">
+                <a href="{{ site.author.url }}" class="grey-text text-lighten-4">Gemaakt door {{ site.author.name }}</a>
+            </span>
+        </div>
+    </div>
+</footer>

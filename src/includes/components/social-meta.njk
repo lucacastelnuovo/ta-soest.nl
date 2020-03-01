@@ -1,0 +1,18 @@
+{# Google Schema #}
+<meta itemprop="name" content="{{ title }} | {{ site.name }}"/>
+<meta itemprop="description" content="{{ site.meta.description }}"/>
+
+{# Twitter #}
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="{{ title }} | {{ site.name }}"/>
+<meta name="twitter:description" content="{{ site.meta.description }}"/>
+<meta name="twitter:image:src" content="{{ site.url }}{{ site.images.logo }}"/>
+
+{# Open Graph #}
+<meta name="og:title" content="{{ title }} | {{ site.name }}"/>
+<meta name="og:description" content="{{ site.meta.description }}"/>
+<meta name="og:image" content="{{ site.url }}{{ site.images.logo }}"/>
+<meta name="og:url" content="{{ site.url }}{{ page.url }}"/>
+<meta name="og:site_name" content="{{ site.name }}"/>
+<meta name="og:locale" content="nl_NL"/>
+<meta name="og:type" content="website"/>

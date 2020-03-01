@@ -1,0 +1,19 @@
+---
+layout: layouts/base.njk
+templateEngineOverride: njk, md
+---
+
+<div class="section">
+    <div class="container">
+        <h1>
+            {{ title }}
+            <a href="{{ url }}" class="btn-large right waves-effect waves-light color-primary--background color-secondary">
+            Open PDF
+        </a>
+        </h1>
+        <h4>{{ date | dateDisplay }}</h4>
+    </div>
+    <div class="container video-container">
+        <iframe src="{{ url }}#toolbar=0"></iframe>
+    </div>
+</div>
