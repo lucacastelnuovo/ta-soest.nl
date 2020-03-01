@@ -15,19 +15,19 @@ title: Publicaties
                 <div class="col s12">
                     <div class="card large">
                         <div class="card-image">
-                            <a href="{{ page.url }}" target="_blank">
+                            <a href="{% if 'http' in page.data.url %}{{ page.data.url }}{% else %}{{ page.url }}{% endif %}">
                                 <img
                                     src="{{ page.data.image }}"
                                     alt="{{ page.data.title }}"
                                     class="responsive-img"/>
+                                <span class="card-title black-text bolder">{{ page.data.title }}</span>
                             </a>
-                            <span class="card-title black-text bolder">{{ page.data.title }}</span>
                         </div>
                         <span class="card-title black-text bolder">
                             {{ page.data.title }} - <time datetime="{{ page.date }}">{{ page.date | dateDisplay("LLLL d, y") }}</time>
                         </span>
                         <div class="card-action">
-                            <a href="{{ page.url }}" target="_blank" class="btn waves-effect waves-light color-primary--background color-secondary">
+                            <a href="{% if 'http' in page.data.url %}{{ page.data.url }}{% else %}{{ page.url }}{% endif %}" class="btn waves-effect waves-light color-primary--background color-secondary">
                                 Lees meer
                             </a>
                         </div>
