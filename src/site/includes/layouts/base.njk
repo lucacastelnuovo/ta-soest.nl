@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+        <title>{{ title }} | {{ site.name }}</title>
+        <meta name="robots" content="index,follow"/>
+        <meta content="{{ site.meta.description }}" name="description"/>
+        <meta content="{{ site.meta.keywords }}" name="keywords"/>
+
+        {# Import Materialize CSS #}
+        <link rel="stylesheet" href="{{ site.resources.materializeCSS}}"/>
+
+        {# Import Custom CSS #}
+        {% set css %}{% include "css/index.css" %}{% endset %}
+        <style>
+            {{css | cssmin | safe}}
+        </style>
+
+        {# Import Google Icon Font #}
+        <link href="{{ site.resources.materialIcons}}" rel="stylesheet"/>
+
+        {# include social meta tags #}
+        {# TODO: fix pages tags #}
+        {# {% include "components/social-meta.njk" %} #}
+
+        {# Favicons/Icons #}
+        <link rel=" shortcut icon" type="image/jpg" href="{{ site.images.favicon }}">
+        <link rel="icon" sizes="192x192" href="{{ site.images.favicon }}"/>
+        <link rel="apple-touch-icon" href="{{ site.images.favicon }}"/>
+
+        {# Canonical #}
+        <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    </head>
+    <body>
+
+        {% include "components/navbar.njk" %}
+        <main>
+            {{ content | safe }}
+        </main>
+        {% include "components/footer.njk" %}
+
+        {# Import Materialize JavaScript #}
+        <script src="{{ site.resources.materializeJS}}"></script>
+
+        {# Import Custom JS #}
+        {% set js %}{% include "js/core.js" %}{% endset %}
+        <script>
+            {{ js | jsmin | safe }}
+        </script>
+
+    </body>
+</html>

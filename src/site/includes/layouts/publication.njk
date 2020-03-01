@@ -1,0 +1,14 @@
+---
+layout: layouts/base.njk
+templateEngineOverride: njk, md
+---
+
+<p>
+  <time datetime="{{ date }}">{{ date | dateDisplay }}</time>
+  <span>{{ pdf }}</span>
+  <span>{{ hero }}</span>
+</p>
+
+<main>
+  {{ content | safe }}
+</main>
