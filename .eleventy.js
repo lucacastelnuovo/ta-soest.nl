@@ -5,14 +5,17 @@ module.exports = function(config) {
   config.addLayoutAlias('publication', 'layouts/publication.njk');
 
   // Add utility filters
-  config.addFilter("dateDisplay", require("./src/utils/date.js") );
+  const { DateTime } = require("luxon");
+  config.addFilter("dateDisplay", (dateObj, format = "LLL d, y") => {
+    return DateTime.fromJSDate(dateObj, {
+        zone: "utc"
+      }).toFormat(format);
+  });
 
 
   // Collections
   config.addCollection('publication', collection => {
-    const publications = collection.getFilteredByTag('publication')
-
-    return publications;
+    return collection.getFilteredByTag('publication')
   })
 
 
@@ -54,9 +57,9 @@ module.exports = function(config) {
 
 
   // pass some assets right through
-  config.addPassthroughCopy('src/site/images');
-  config.addPassthroughCopy('src/site/pdf');
-  config.addPassthroughCopy('src/site/robots.txt');
+  config.addPassthroughCopy('src/images');
+  config.addPassthroughCopy('src/pdf');
+  config.addPassthroughCopy('src/robots.txt');
 
   return {
     templateFormats : ['njk', 'md'],
@@ -64,7 +67,7 @@ module.exports = function(config) {
     htmlTemplateEngine : 'njk',
     passthroughFileCopy: true,
     dir: {
-      input: 'src/site',
+      input: 'src',
       output: 'dist',
       includes: 'includes',
       data: 'data'
