@@ -1,0 +1,36 @@
+{
+  "name": "ta-soest",
+  "version": "1.0.0",
+  "description": "TechAssistants Soest",
+  "author": "Luca Castelnuovo <ltcastelnuovo@gmail.com> (https://lucacastelnuovo.nl)",
+  "browserslist": {
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ],
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ]
+  },
+  "homepage": "https://ta-soest.nl",
+  "prettier": {
+    "singleQuote": true,
+    "tabWidth": 4
+  },
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Luca-Castelnuovo/TA-Soest.git"
+  },
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "start": "npx @11ty/eleventy --serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^0.10.0"
+  }
+}
