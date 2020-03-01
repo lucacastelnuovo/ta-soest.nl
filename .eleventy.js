@@ -15,7 +15,7 @@ module.exports = function(config) {
 
   // Collections
   config.addCollection('publication', collection => {
-    return collection.getFilteredByTag('publication')
+    return collection.getFilteredByTag('publication').reverse();
   })
 
 

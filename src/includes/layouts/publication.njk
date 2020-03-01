@@ -3,11 +3,15 @@ layout: layouts/base.njk
 templateEngineOverride: njk, md
 ---
 
-<p>
-  <time datetime="{{ date }}">{{ date | dateDisplay }}</time>
-  <span>{{ pdf }}</span>
-  <span>{{ hero }}</span>
-</p>
+<div class="section">
+  <div class="container">
+    <p>
+      <time datetime="{{ date }}">{{ date | dateDisplay }}</time>
+      <span>{{ pdf }}</span>
+      <span>{{ hero }}</span>
+    </p>
+  </div>
+</div>
 
 <main>
   {{ content | safe }}
