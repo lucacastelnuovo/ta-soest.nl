@@ -1,48 +1,30 @@
 {
-    "main": [
-        {
-            "label": "Home",
-            "url": "/"
-        },
-        {
-            "label": "Afspraak Maken",
-            "url": "/afspraak"
-        },
-        {
-            "label": "Over Ons",
-            "url": "/over-ons"
-        },
-        {
-            "label": "Publicaties",
-            "url": "/publicaties"
-        }
-    ],
-    "afspraakMaken": {
-        "label": "Afspraak Maken",
-        "url": "/afspraak"
-    },
-    "algemeneVoorwaarden": {
-        "label": "",
-        "url": "/voorwaarden"
-    },
-    "copyright": {
-        "label": "",
-        "url": "/copyright"
-    },
     "home": {
         "label": "Home",
         "url": "/"
     },
+    "afspraakMaken": {
+        "label": "Afspraak Maken",
+        "url": "/afspraak/"
+    },
     "overOns": {
         "label": "Over Ons",
-        "url": "/over-ons"
-    },
-    "privacybeleid": {
-        "label": "",
-        "url": "/privacy"
+        "url": "/over-ons/"
     },
     "publicaties": {
         "label": "Publicaties",
-        "url": "/publicaties"
+        "url": "/publicaties/"
+    },
+    "algemeneVoorwaarden": {
+        "label": "",
+        "url": "/voorwaarden/"
+    },
+    "copyright": {
+        "label": "",
+        "url": "/copyright/"
+    },
+    "privacybeleid": {
+        "label": "",
+        "url": "/privacy/"
     }
 }

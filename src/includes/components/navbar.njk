@@ -13,20 +13,24 @@
             </a
             >
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-                {% for item in navigation.main %}
-                    <li class="{% if page.url == item.url %}active{% endif %}">
-                        <a href="{{ item.url | safe }}" class="color-secondary" {% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a>
-                    </li>
+                {% for key, item in navigation %}
+                    {% if item.label %}
+                        <li class="{% if page.url == item.url %}active{% endif %}">
+                            <a href="{{ item.url | safe }}" class="color-secondary" {% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a>
+                        </li>
+                    {% endif %}
                 {% endfor %}
             </ul>
         </div>
     </nav>
 
     <ul id="mobile" class="sidenav">
-        {% for item in navigation.main %}
-            <li class="{% if page.url == item.url %}active{% endif %}">
-                <a href="{{ item.url | safe }}" {% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a>
-            </li>
+        {% for key, item in navigation %}
+            {% if item.label %}
+                <li class="{% if page.url == item.url %}active{% endif %}">
+                    <a href="{{ item.url | safe }}" {% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a>
+                </li>
+            {% endif %}
         {% endfor %}
     </ul>
 </header>
