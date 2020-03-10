@@ -1,17 +1,48 @@
 [build]
-  command = "npm run build"
+  base = ""
   publish = "dist"
+  command = "npm run build"
+  # functions = "project/functions/"
+
+  [build.processing]
+    skip_processing = false
+  [build.processing.css]
+    bundle = true
+    minify = false
+  [build.processing.js]
+    bundle = true
+    minify = false
+  [build.processing.html]
+    pretty_urls = true
+  [build.processing.images]
+    compress = true
+
 
 [[headers]]
   for = "/*"
 
   [headers.values]
-    X-Frame-Options = "SAME-ORIGIN"
+    X-Frame-Options = "SAMEORIGIN"
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
     X-Permitted-Cross-Domain-Policies = "none"
     Referrer-Policy = "SAME-ORIGIN"
-    # Content-Security-Policy = "frame-ancestors https://www.facebook.com"
+    Content-Security = '''
+      default-src 'none';
+      script-src https://analytics.lucacastelnuovo.nl/tracker.js https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js https://www.google.com/recaptcha/api.js https://www.gstatic.com/recaptcha/releases/ 'sha256-pqbLoUivu70DlJASohKPjOwAI8Wbu5KIcoQm6724w1s=' 'sha256-Cd9/QKWARPyeNkN5xsQ7cEmWnVmRMHGieDedY+RS6dU=';
+      style-src 'unsafe-inline' https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css https://fonts.googleapis.com/icon;
+      img-src 'self' https://*.cloudfront.net;
+      frame-src 'self' https://www.google.com/recaptcha/api2/anchor;
+      font-src https://fonts.googleapis.com/icon https://fonts.gstatic.com/s/materialicons/;
+      connect-src 'self' https://analytics.lucacastelnuovo.nl;
+    '''
+
+[[headers]]
+  for = "/static/*"
+
+  [headers.values]
+    Cache-Control = "public,max-age=31536000,immutable"
+
 
 [[redirects]]
   from = "/*"

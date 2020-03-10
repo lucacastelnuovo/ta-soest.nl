@@ -11,6 +11,7 @@
         <meta content="{{ site.meta.keywords }}" name="keywords"/>
 
         {# Import Materialize CSS #}
+        <link href="{{ site.resources.materialIcons}}" rel="preconnect" crossorigin>
         <link rel="stylesheet" href="{{ site.resources.materializeCSS}}"/>
 
         {# Import Custom CSS #}
@@ -20,6 +21,7 @@
         </style>
 
         {# Import Google Icon Font #}
+        <link href="{{ site.resources.materialIcons}}" rel="preconnect" crossorigin>
         <link href="{{ site.resources.materialIcons}}" rel="stylesheet"/>
 
         {# include social meta tags #}
@@ -45,10 +47,17 @@
         <script src="{{ site.resources.materializeJS}}"></script>
 
         {# Import Custom JS #}
-        {% set js %}{% include "js/core.js" %}{% endset %}
+        {% set js_core %}{% include "js/core.js" %}{% endset %}
         <script>
-            {{ js | jsmin | safe }}
+            {{ js_core | jsmin | safe }}
         </script>
 
+        {# Import Form JS #}
+        {% set js_form %}{% include "js/form.js" %}{% endset %}
+        <script>
+            {{ js_form | jsmin | safe }}
+        </script>
+
+        <script async src="https://analytics.lucacastelnuovo.nl/tracker.js" data-ackee-server="https://analytics.lucacastelnuovo.nl" data-ackee-domain-id="d12ff10f-b087-4a71-b02c-55aa3d4e1a0d"></script>
     </body>
 </html>
