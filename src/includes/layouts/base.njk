@@ -45,15 +45,15 @@
         <script src="{{ site.resources.materializeJS}}"></script>
 
         {# Import Custom JS #}
-        {% set js %}{% include "js/core.js" %}{% endset %}
+        {% set js_core %}{% include "js/core.js" %}{% endset %}
         <script>
-            {{ js | jsmin | safe }}
+            {{ js_core | jsmin | safe }}
         </script>
 
         {# Import Form JS #}
-        {% set js %}{% include "js/form.js" %}{% endset %}
+        {% set js_form %}{% include "js/form.js" %}{% endset %}
         <script>
-            {{ js | jsmin | safe }}
+            {{ js_form | jsmin | safe }}
         </script>
 
     </body>
