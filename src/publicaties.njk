@@ -12,10 +12,19 @@ title: Publicaties
         </div>
         <div class="row">
             {%- for page in collections.publication -%}
+                {# {% set url %}
+                {% if 'http' in page.data.url %}
+                    {{ page.data.url }}
+                {% else %}
+                    {{ page.url }}
+                {% endif %}
+                {% endset %} #}
+                {% set url %}{{ page.data.url }}{% endset %}
+
                 <div class="col s12">
                     <div class="card large">
                         <div class="card-image">
-                            <a href="{% if 'http' in page.data.url %}{{ page.data.url }}{% else %}{{ page.url }}{% endif %}">
+                            <a href="{{ url }}">
                                 <img
                                     src="{{ page.data.image }}"
                                     alt="{{ page.data.title }}"
@@ -27,7 +36,7 @@ title: Publicaties
                             {{ page.data.title }} - <time datetime="{{ page.date }}">{{ page.date | dateDisplay("LLLL d, y") }}</time>
                         </span>
                         <div class="card-action">
-                            <a href="{% if 'http' in page.data.url %}{{ page.data.url }}{% else %}{{ page.url }}{% endif %}" class="btn waves-effect waves-light color-primary--background color-secondary">
+                            <a href="{{ url }}" class="btn waves-effect waves-light color-primary--background color-secondary">
                                 Lees meer
                             </a>
                         </div>
