@@ -50,5 +50,11 @@
             {{ js | jsmin | safe }}
         </script>
 
+        {# Import Form JS #}
+        {% set js %}{% include "js/form.js" %}{% endset %}
+        <script>
+            {{ js | jsmin | safe }}
+        </script>
+
     </body>
 </html>
