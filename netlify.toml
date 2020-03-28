@@ -27,7 +27,7 @@
     X-Content-Type-Options = "nosniff"
     X-Permitted-Cross-Domain-Policies = "none"
     Referrer-Policy = "SAME-ORIGIN"
-    Content-Security = '''
+    Content-Security-Policy = '''
       default-src 'none';
       script-src https://analytics.lucacastelnuovo.nl/tracker.js https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js https://www.google.com/recaptcha/api.js https://www.gstatic.com/recaptcha/releases/ 'sha256-pqbLoUivu70DlJASohKPjOwAI8Wbu5KIcoQm6724w1s=' 'sha256-Cd9/QKWARPyeNkN5xsQ7cEmWnVmRMHGieDedY+RS6dU=';
       style-src 'unsafe-inline' https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css https://fonts.googleapis.com/icon;
