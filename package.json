@@ -33,7 +33,7 @@
     "@11ty/eleventy": "^0.11.1",
     "clean-css": "^5.0.1",
     "html-minifier": "^4.0.0",
-    "luxon": "^1.25.0",
+    "luxon": "^1.26.0",
     "uglify-js": "^3.12.8"
   }
 }
