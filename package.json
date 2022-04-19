@@ -30,7 +30,7 @@
     "start": "eleventy --serve"
   },
   "dependencies": {
-    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy": "^1.0.1",
     "clean-css": "^5.1.2",
     "html-minifier": "^4.0.0",
     "luxon": "^2.1.1",
